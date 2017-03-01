@@ -233,7 +233,7 @@ input{
 	}
 	.cpad{
 		margin: 17px auto;
-		width: 100%;
+		/*width: 100%;*/
 	}
 }
 
