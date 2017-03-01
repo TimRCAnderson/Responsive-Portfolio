@@ -73,7 +73,8 @@ hr.hidden{
 #aboutme, #contact, #portfolio{
 	width: 570px;
 	overflow: auto;
-	float: left;
+	display: inline-block;
+	vertical-align: top;
 }
 
 #headshot{
@@ -85,11 +86,12 @@ hr.hidden{
 }
 
 #connect{
-	position: absolute;
-	top: 90px;
+
 	width: 190px;
 	text-align: left;
 	font-weight: bold;
+	display: inline-block;
+	vertical-align: top;
 	
 }
 
@@ -107,7 +109,7 @@ p{
 	margin-bottom: 30px;
 }
 
-#portfolio div{
+.port_Item{
 	float: left;
 	position: relative;
 	width: 275px;
@@ -200,11 +202,13 @@ aside{
 
 input{
 	width: 300px;
+	margin: 5px 0 20px 0;
 }
 
 #message{
 	width: 90%;
 	height: 300px;
+	margin: 5px 0 20px 0;
 }
 
 @media only screen and (max-width: 980px){
@@ -213,14 +217,20 @@ input{
 		max-width: 1000px;
 		clear: both;
 	}
-
+	input{
+		width: 100%;
+	}
+	#message{
+		width: 100%;
+	}
 	.content{
 		width: 100%	;
+		padding: auto;
+		top: 0;
 	}
 	#connect{
 		position: relative;
 		display: inline-block;
-		top: 0;
 	}
 	.cpad{
 		margin: 17px auto;
@@ -238,6 +248,10 @@ input{
 		margin: 80px 2% 10px 2%;
 		width: 96%;
 		padding: 0;
+	}
+	.port_Item{
+		width: 46%;
+		margin: 5px 2%;
 	}
 	.c_pad{
 		margin: 10px 0;
@@ -276,6 +290,12 @@ input{
 		left: 0;
 		text-align: center;
 
+	}
+	.port_Item
+	{
+		width: 100%;
+		margin: 5px 0;
+		
 	}
 	nav{
 		box-sizing: border-box;
